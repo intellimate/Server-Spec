@@ -7,4 +7,6 @@ option java_multiple_files = true;
 
 message IzouInstance {
   int32 id = 1;
+  string name = 2;
+  string token = 3;
 }
