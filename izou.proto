@@ -7,6 +7,6 @@ option java_multiple_files = true;
 
 message Izou {
   int32 id = 1;
-  int32 version = 2;
-  string upload_link = 3;
+  string version = 2;
+  string download_link = 3;
 }
