@@ -10,7 +10,8 @@ message App {
   string name = 2;
   string developer = 3;
   string description = 4;
-  repeated AppVersion versions = 5;
+  repeated string tags = 5;
+  repeated AppVersion versions = 6;
 
   message AppVersion {
     string version = 1;
