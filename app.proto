@@ -16,6 +16,6 @@ message App {
   message AppVersion {
     string version = 1;
     string download_link = 2;
-    repeated int32 dependencies = 3;
+    repeated App dependencies = 3;
   }
 }
