@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package intellimate;
+
+option java_package = "org.intellimate.server.proto";
+option java_multiple_files = true;
+
+import "server-protobuf/app.proto";
+
+message AppList {
+  repeated App apps = 1;
+}

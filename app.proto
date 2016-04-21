@@ -10,12 +10,14 @@ message App {
   string name = 2;
   string developer = 3;
   string description = 4;
-  repeated string tags = 5;
-  repeated AppVersion versions = 6;
+  bool active = 5;
+  repeated string tags = 6;
+  repeated AppVersion versions = 7;
 
   message AppVersion {
     string version = 1;
-    string download_link = 2;
-    repeated App dependencies = 3;
+    string platform = 2;
+    string download_link = 3;
+    repeated App dependencies = 4;
   }
 }
