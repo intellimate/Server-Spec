@@ -11,5 +11,6 @@ message IzouInstanceStatus {
         RUNNING = 0;
         DISABLED = 1;
         RESTARTING = 2;
+        UPDATING = 3;
     }
 }
