@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package intellimate;
+
+option java_package = "org.intellimate.server.proto";
+option java_multiple_files = true;
+
+message IzouInstanceStatus {
+    Status status = 1;
+    enum Status {
+        RUNNING = 0;
+        DISABLED = 1;
+        RESTARTING = 2;
+    }
+}
