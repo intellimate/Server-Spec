@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package intellimate;
+
+option java_package = "org.intellimate.server.proto";
+option java_multiple_files = true;
+
+message HttpResponse {
+    int32 status = 1;
+    repeated Header headers = 2;
+    string contentType = 3;
+    bytes body = 4;
+
+
+    message Header {
+        string key = 1;
+        repeated string value = 2;
+    }
+}
