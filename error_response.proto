@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package intellimate;
+
+option java_package = "org.intellimate.server.proto";
+option java_multiple_files = true;
+
+message ErrorResponse {
+    string code = 1;
+    string detail = 2;
+}
