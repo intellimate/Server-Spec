@@ -10,7 +10,7 @@ message HttpRequest {
     repeated Param params = 2;
     string method = 3;
     string content_type = 4;
-    bytes body = 5;
+    sint64 body_size = 5;
 
     message Param {
         string key = 1;

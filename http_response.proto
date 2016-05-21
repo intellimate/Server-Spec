@@ -9,7 +9,7 @@ message HttpResponse {
     int32 status = 1;
     repeated Header headers = 2;
     string contentType = 3;
-    bytes body = 4;
+    sint64 body_size = 4;
 
 
     message Header {
