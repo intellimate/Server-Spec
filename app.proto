@@ -17,7 +17,8 @@ message App {
   message AppVersion {
     string version = 1;
     string platform = 2;
-    string download_link = 3;
-    repeated App dependencies = 4;
+    bool active = 4;
+    string download_link = 5;
+    repeated App dependencies = 6;
   }
 }

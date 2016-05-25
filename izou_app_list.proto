@@ -12,4 +12,5 @@ message IzouAppList {
     repeated App installed = 2;
     repeated App to_delete = 3;
     repeated App to_install = 4;
+    repeated App to_install_downloaded = 5;
 }
