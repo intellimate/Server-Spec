@@ -19,7 +19,7 @@ message App {
     string version = 1;
     string platform = 2;
     string error = 3;
-    string warning = 5;
+    repeated string warnings = 5;
     bool active = 6;
     string download_link = 7;
     repeated App dependencies = 8;
